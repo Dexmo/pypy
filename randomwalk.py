@@ -2,7 +2,7 @@ from random import choice
 
 class RandomWalkClass():
     """ Class intended for generate the random walk"""
-    def __init__(self, num_points=500):
+    def __init__(self, num_points=5000):
         """ Initial the walk attribute """
         self.num_points = num_points
 
