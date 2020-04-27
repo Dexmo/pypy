@@ -6,9 +6,11 @@ while True:
     rw = RandomWalkClass()
     rw.fill_walk()
 
-    plt.scatter(rw.x_values, rw.y_values, s=15)
+    point_numbers = list(range(rw.num_points))
+    plt.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Blues,
+                edgecolor='none', s=15)
     plt.show()
 
-    keep_running = input("Utworzyć kolejne błądzenie losowe? (t/n): ")
+    keep_running = input("Create another random walk? (y/n): ")
     if keep_running == 'n':
         break
