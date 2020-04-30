@@ -25,3 +25,11 @@ print(odd_number)
 # creating the list with values to cube using list comprehension
 cube_values = [value**3 for value in range(1,11)]
 print(cube_values)
+
+""" taking some part of list """
+players = ['Mati', 'Kati', 'Pati', "Sati"]
+print(players[2:]) #Only shows Pati and Sati
+print(players[:2]) #Only shows Mati and Kati
+
+new_players = players[:]
+print(new_players)
