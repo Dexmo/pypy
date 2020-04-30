@@ -33,3 +33,8 @@ print(players[:2]) #Only shows Mati and Kati
 
 new_players = players[:]
 print(new_players)
+
+""" TUPLE """
+dimensions = (200, 50)
+print("First dimension: " + str(dimensions[0]) + ", and second: " + str(dimensions[1]) +
+      ".\nBecause dimensions are storage in tuple we cannot change it!")
