@@ -12,3 +12,8 @@ alien_0['position_y'] = 5
 
 # Printing all dictionary
 print(alien_0)
+
+# Modify the value of key 'color'
+alien_0['color'] = 'yellow'
+
+print(alien_0)
