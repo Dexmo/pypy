@@ -5,3 +5,7 @@ class Battery:
 
     def describe_battery(self):
         print("This car has battery with " + str(self.battery_size) + "kWh.")
+
+
+my_battery = Battery(battery_size=60)
+my_battery.describe_battery()
