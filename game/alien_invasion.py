@@ -8,6 +8,9 @@ def run_game():
     screen = pygame.display.set_mode((800, 600)) # Responsible for screen resolution
     pygame.display.set_caption("Alien Invasion")
 
+    #Background color definition
+    bg_color = (230, 230, 0) #Tuple with RGB setting
+
     # Main loop
     while True:
 
@@ -15,6 +18,9 @@ def run_game():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 sys.exit()
+
+        #Refreshing the screen in each loop's iteration
+        screen.fill(bg_color)
 
         #Show the last modified view
         pygame.display.flip()
