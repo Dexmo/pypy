@@ -2,6 +2,7 @@ import sys
 import pygame
 from settings import Settings
 from ship import Ship
+import game_function as gf
 
 
 def run_game():
@@ -18,11 +19,7 @@ def run_game():
 
     # Main loop
     while True:
-
-        # Waiting for event
-        for event in pygame.event.get():
-            if event.type == pygame.QUIT:
-                sys.exit()
+        gf.check_events()
 
         # Refreshing the screen in each loop's iteration
         screen.fill(ai_settings.bg_color)
