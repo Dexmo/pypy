@@ -2,7 +2,7 @@ import sys
 import pygame
 
 
-def check_events():
+def check_events(ship):
     # Reactions to clicks and keys
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
@@ -11,6 +11,9 @@ def check_events():
             if event.key == pygame.K_RIGHT:
                 # move the ship to the right
                 ship.rect.centerx += 1
+        elif event.type == pygame.KEYUP:
+            if event.key == pygame.K_RIGHT:
+                ship.moving_right = False
 
 def update_screen(ai_settings, screen, ship):
     # Update view on the screen and pass to another screen
