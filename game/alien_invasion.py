@@ -20,10 +20,7 @@ def run_game():
     # Main loop
     while True:
         gf.check_events()
-
-        # Refreshing the screen in each loop's iteration
-        screen.fill(ai_settings.bg_color)
-        ship.blitme()
+        gf.update_screen(ai_settings, screen, ship)
 
         # Show the last modified view
         pygame.display.flip()
