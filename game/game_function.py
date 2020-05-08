@@ -11,9 +11,15 @@ def check_events(ship):
             if event.key == pygame.K_RIGHT:
                 # move the ship to the right
                 ship.rect.centerx += 1
+            elif event.key == pygame.K_LEFT:
+                # move the ship to the left
+                ship.rect.centerx -= 1
         elif event.type == pygame.KEYUP:
             if event.key == pygame.K_RIGHT:
                 ship.moving_right = False
+            elif event.key == pygame.K_LEFT:
+                ship.moving_left = False
+
 
 def update_screen(ai_settings, screen, ship):
     # Update view on the screen and pass to another screen
